@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +27,7 @@ public class CepResource {
 	
 	CepMapper cepMapper = new CepMapper();
 	
+    @CrossOrigin
 	@GetMapping("/consultar-e-salvar-endereco")
 	public ResponseEntity<CepDomain> consultarESalvarEndereco(@RequestParam String cep) {
 		CepDomain cepDomain = consultaViaCep.buscarEndereco(cep);
@@ -34,7 +36,7 @@ public class CepResource {
 		return ResponseEntity.ok(cepDomain); 
 	}
 
-	
+    @CrossOrigin
 	@GetMapping("/listar-todos")
 	public ResponseEntity<List<EnderecoEntity>> listarTodos() {
 		return ResponseEntity.ok(cepRepository.findAll()); 
