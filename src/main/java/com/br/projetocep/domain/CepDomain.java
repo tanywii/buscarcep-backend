@@ -1,5 +1,6 @@
 package com.br.projetocep.domain;
 
+// CLASSE USADA PARA PEGAR O RETORNO DO VIA CEP
 public class CepDomain {
 
     private String cep;
