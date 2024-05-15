@@ -10,32 +10,34 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "endereco")
+@Table(name = "endereco") //ESSA LINHA DIZ QUE SE REFERE A TABELA endereco 
 public class EnderecoEntity {
 
+
+	// ESSA LINHA  DIZ QUE É UMA CHAVE DA TABELA 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
-	@Column(name = "cep")
+	@Column(name = "cep") //REFERENCIA A COLUNA Cep NO BANCO DE DADOS 
 	private String cep;
 
-	@Column(name = "logradouro")
+	@Column(name = "logradouro") //REFERNCIA A COLUNA Logradouro NO BANCO DE DADOS 
 	private String logradouro;
 
-	@Column(name = "cidade")
+	@Column(name = "cidade") // REFERENCIA A COLUNA Cidade NO BANCO DE DADOS 
 	private String cidade;
 
-	@Column(name = "bairro")
+	@Column(name = "bairro") //REFERENCIA A COLUNA Bairro NO BANCO DE DAODS 
 	private String bairro;
 
-	@Column(name = "uf")
+	@Column(name = "uf") //REFERENCIA A COLUNA Uf NO BANCO DE DADOS 
 	private String uf;
 
-	@Column(name = "complemento")
+	@Column(name = "complemento") // REFERENCIA A COLUNA Complemento NO BANCO DE DADOS 
 	private String complemento;
 
-	@Column(name = "data_hora_consulta")
+	@Column(name = "data_hora_consulta") // REFETENCIA  A COLUNA data_hora_consulta NO BANCO DE DADOS 
 	private Timestamp dataHoraConsulta;
 
 	public long getId() {
