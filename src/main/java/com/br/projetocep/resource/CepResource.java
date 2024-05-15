@@ -16,6 +16,8 @@ import com.br.projetocep.integration.ViaCepClientIntegration;
 import com.br.projetocep.mapper.CepMapper;
 import com.br.projetocep.repository.CepRepository;
 
+// CLASSE "PRINCIPAL" ONDE FICAM AS DUAS API'S (consulta_e_salvar_endereco) (listar-todos) 
+
 // ESSA CLASSE TOODA É A ENTRADA DA APLICAÇÃO, OU SEJA, COMEÇA A EXECUTAR PELOS DOIS MÉTODOS (consulta-e-salvar-endereço) (listar-todos)
 @RestController
 @RequestMapping("/cep")
