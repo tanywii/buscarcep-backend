@@ -6,6 +6,7 @@ import java.time.Instant;
 import com.br.projetocep.domain.CepDomain;
 import com.br.projetocep.entity.EnderecoEntity;
 
+// CLASSE USADA PARA TRANSFORMAR A CLASSE CepDomain EM EnderecoEntity (a classe que tem as anotacoes) 
 public class CepMapper {
 
 	// ESSE MÉTODO ABAIXO PEGA OS VALORES DA CLASSE CepDomain E JOGA PARA A CLASSE EnderecoEntity
