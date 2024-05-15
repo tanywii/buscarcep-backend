@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+// CLASSE USADA PARA COMUNICAR COM O BANCO DE DADOS ATRÁVEZ DAS ANOTAÇOES @Column E @Table 
 @Entity
 @Table(name = "endereco") //ESSA LINHA DIZ QUE SE REFERE A TABELA endereco 
 public class EnderecoEntity {
