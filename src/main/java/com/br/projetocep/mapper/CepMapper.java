@@ -8,6 +8,8 @@ import com.br.projetocep.entity.EnderecoEntity;
 
 public class CepMapper {
 
+	// ESSE MÉTODO ABAIXO PEGA OS VALORES DA CLASSE CepDomain E JOGA PARA A CLASSE EnderecoEntity
+	// FAZEMOS ISSO PORQUE A CLASSE EnderecoEntity É A QUE SE COMUNICA COM O BANCO DE DADOS VIA JPA, USANDO ANOTACOES @Colimn E @Table 
 	public EnderecoEntity toEntity(CepDomain cepDomain) {
 		EnderecoEntity enderecoEntity = new EnderecoEntity();
 		enderecoEntity.setCep(cepDomain.getCep());
