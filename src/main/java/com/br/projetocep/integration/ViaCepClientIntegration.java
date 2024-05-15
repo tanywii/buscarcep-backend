@@ -5,7 +5,8 @@ import org.springframework.web.client.RestTemplate;
 
 import com.br.projetocep.domain.CepDomain;
 
-// É A CLASSE QUE SE COMUNICA COM A API DO VIACEP 
+// USADA PARA CHAMAR A API DO VIA CEP (
+// CLASSE USADA PARA CHAMAR A API DO VIACEP (retorna a chasse CepDomain) 
 public class ViaCepClientIntegration {
 
 	String url = "https://viacep.com.br/ws/parametro/json/";
